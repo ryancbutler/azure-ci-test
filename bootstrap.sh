@@ -7,3 +7,5 @@ echo $(hostname)
 echo "DONE WITH SCRIPT"
 
 drlghmpdmhpdhmdpohmdphmgdpohgmdfgbhmfpolhmnfdphmfdhmf
+
+exit 0
