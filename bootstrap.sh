@@ -6,4 +6,4 @@ echo $(hostname)
 
 echo "DONE WITH SCRIPT"
 
-d;rlghmpdmhpd;hmdpohmdphmgdpohgmdfgbhmfpolhmnfdphmfdhmf
+drlghmpdmhpdhmdpohmdphmgdpohgmdfgbhmfpolhmnfdphmfdhmf
