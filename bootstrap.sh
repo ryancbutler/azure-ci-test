@@ -6,6 +6,12 @@ echo $(hostname)
 
 echo "DONE WITH SCRIPT"
 
-drlghmpdmhpdhmdpohmdphmgdpohgmdfgbhmfpolhmnfdphmfdhmf
+touch /idontexist/fileme
+
+retVal=$?
+if [ $? -ne 0 ]; then
+    echo "Error"
+fi
+exit $retVal
 
 exit 0
