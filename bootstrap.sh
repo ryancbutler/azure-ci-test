@@ -4,8 +4,11 @@ echo $MYVAR
 
 echo $(hostname)
 
-echo "DONE WITH SCRIPT"
+ls -alF /mnt/test
 
+ls -alF /myawesomefileshare
+
+echo "DONE WITH SCRIPT"
 
 if [ $? -ne 0 ]; then
     echo "Error"
