@@ -1,19 +1,9 @@
 #!/bin/sh
+apt-get -qq update
+apt-get -qq install bc -y
 
-echo $MYVAR
-
-echo $(hostname)
-
-ls -alF /mnt/test
-
-ls -alF /myawesomefileshare
-
-touch /myawesomefileshare/${MYVAR}.txt
-
-apt-get update
-apt-get install bc -y
-
-echo "scale=5000; 4*a(1)" | bc -l
+SCALE=$(cat /mnt/azuremount/${INPUT}/scale.txt)
+echo "scale=${SCALE}; 4*a(1)" | bc -l > /mnt/azuremount/${OUTPUT}/${ACCOUNT}.txt
 echo "DONE WITH SCRIPT"
 
 if [ $? -ne 0 ]; then
